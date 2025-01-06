@@ -20,7 +20,7 @@ import jwt from 'jsonwebtoken'
 
 //middleware for passing the json request to body
 app.use(bodyParser.json()); //Always return json based values
-app.use(cors()) 
+app.use(cors({ origin: 'https://frontend-ruby-beta.vercel.app' }));
 dotenv.config()
 
 
